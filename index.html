@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhinav pratap singh | Portfolio</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#000;
+    color:#fff;
+}
+
+/* ================= NAVBAR ================= */
+
+header{
+    width:100%;
+    background:#111;
+    position:fixed;
+    top:0;
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+    color:#df1761;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#fff;
+    position:relative;
+}
+
+nav ul li a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0;
+    height:3px;
+    background:#df1761;
+    transition:0.3s;
+}
+
+nav ul li a:hover::after{
+    width:100%;
+}
+
+/* Hamburger */
+.menu-toggle{
+    display:none;
+    font-size:25px;
+    cursor:pointer;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+    padding-top:120px;
+    padding-bottom:60px;
+    gap:40px;
+}
+
+.hero-img{
+    width:300px;
+    height:300px;
+    background:url("abhi.jpg") center/cover no-repeat;
+    border-radius:50%;
+    border:5px solid #df1761;
+}
+
+.hero-text{
+    max-width:500px;
+}
+
+.hero-text h1{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.hero-text span{
+    color:#df1761;
+}
+
+.hero-text p{
+    line-height:1.6;
+}
+
+/* ================= SECTION ================= */
+
+.section{
+    width:80%;
+    margin:60px auto;
+    text-align:center;
+}
+
+.section h2{
+    font-size:35px;
+    color:#df1761;
+}
+
+.section hr{
+    width:50%;
+    height:4px;
+    background:#df1761;
+    margin:10px auto 30px;
+    border:none;
+}
+#p1{
+   width: 80%;
+   margin: auto;
+   background: black;
+   color: white;
+   font-size: 20px;
+   margin-top: 30px;
+}
+
+.section p{
+    text-align:justify;
+    line-height:1.7;
+}
+
+/* ================= SKILLS ================= */
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+    gap:20px;
+    
+
+.skills img{
+    width:100px;
+    margin:auto;
+    background-color: #df1761;
+}
+}
+
+/* ================= SERVICES ================= */
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.service-box{
+    background:#222;
+    padding:25px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.service-box:hover{
+    transform:translateY(-8px);
+    background:#df1761;
+}
+ul{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: black;
+    
+    color: white;
+    list-style: none;
+    font-size: 23px;
+    padding: 0 100px;
+    color:#df1761;
+ 
+   
+}
+
+ul li{
+    margin: 0 20px;
+    position: relative;
+    cursor: pointer;
+    align-items: center;
+    
+} 
+ul li::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: red;
+    transition: 0.4s;
+}
+
+ul li:hover::after{
+    width: 40px;
+}
+.icons{
+    margin-left: auto;
+    display: flex;
+    gap: 30px;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.contact div{
+    flex:1 1 300px;
+    background:#222;
+    padding:30px;
+    border-radius:10px;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111;
+    margin-top:40px;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+    nav ul{
+        position:absolute;
+        top:60px;
+        right:-100%;
+        flex-direction:column;
+        background:#111;
+        width:200px;
+        padding:20px;
+        transition:0.3s;
+    }
+
+    nav ul.active{
+        right:0;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+}
+.skillouter{
+    width: 80%;
+   
+    height: 1090px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+
+}
+
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+
+
+<ul id="menu">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<div class="icons">
+        <i class="fa-solid fa-computer"></i>
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-solid fa-phone"></i>
+    </div>
+
+<div class="menu-toggle" onclick="toggleMenu()">
+<i class="fas fa-bars"></i>
+</div>
+
+</nav>
+</header>
+<!-- HERO -->
+<section class="hero" id="home">
+<div class="hero-img"></div>
+
+<div class="hero-text">
+<h1>Hey, I'm <span>Abhinav pratap singh</span></h1>
+<p>I am a Full Stack Developer working at DigiCoders Technologies Pvt. Ltd. Lucknow. I build responsive and dynamic web applications using Python .</p>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+<h2>About Me</h2>
+<hr>
+<div id="p1" >
+    <p>Hello! I'm <span style="color: #df1761; font-weight: bolder;">Abhinav pratap singh</span>, a passionate <span style="color: #df1761; font-weight: bolder;">Full Stack Developer</span>  with expertise in both frontend and backend technologies. I specialize in creating dynamic and responsive web applications using the MERN and MEAN stacks, as well as python. With a strong foundation in HTML, CSS, JavaScript, and various frameworks, I'm dedicated to delivering high-quality code and seamless user experiences. Whether it's building robust backend systems or crafting engaging user interfaces, I thrive on turning ideas into reality.</p> <br>
+    <p>My journey in the tech world began with an intense focus on web development, where I honed my skills through various training and internships. I started with a 45-day UI training at Kamadgiri Software Solutions Pvt. Ltd. Chitrakoot, where I was honored with a "Star Performance Award" for my dedication and skills. Following that, I completed a 2-month summer training in Core Python Programming at Tcybill Technologies Pvt. Ltd. Prayagraj, where I received the "Best Performance Award" for my contributions.</p>
+    <br><p>I am currently working as a Full Stack Developer at Digicoders Technologies Pvt Ltd. Lucknow, where I have gained hands-on experience in PHPk development. During my job, I successfully completed over 30 frontend projects and more than 15 full-stack projects for clients, showcasing my ability to deliver high-quality, scalable solutions. I have also completed 6-month internships from Digicoders Technologies Pvt. Ldt. Lucknow. I have also 1+ year experience as a PHP Stack PHP Developer at DigiCoders Technologies Pvt. Ltd. Prayagraj.</p>
+</div>
+<ul style="list-style-type:square; ">
+    <li style="margin-left: 80px;">Team Work</li>
+    <li>Fast Learner</li>
+    <li>Time Management</li>
+    <li>Smart Work</li>
+    <li>Problem Solver</li>
+</ul>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+<h2>My Skills</h2>
+<hr>
+<div class="skillouter">
+     <div class="skill-icons"><img src="c.png" alt="" height="225px" width="225px"></div>
+     <div class="skill-icons"><img src="ex.png" alt=""></div>
+     <div class="skill-icons"><img src="github.jpg" alt=""></div>
+     <div class="skill-icons"><img src="jawascript.jpg" alt=""></div>
+     <div class="skill-icons"><img src="mongoDB.png" alt="" height="225px" width="225px"></div>
+     <div class="skill-icons"><img src="nodejs.svg" alt="" height="225px" width="225px"></div>
+     <div class="skill-icons"><img src="php.png" alt=""height="225px" width="225px"></div>
+     <div class="skill-icons"><img src="python.jpg" alt=""></div>
+     <div class="skill-icons"><img src="react.png" alt="" height="225px" width="225px"></div>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+<h2>My Services</h2>
+<hr>
+<div class="services">
+<div class="service-box">
+<h3>Web Development</h3>
+<p>Responsive and modern websites using latest technologies.</p>
+</div>
+
+<div class="service-box">
+<h3>Frontend Development</h3>
+<p>Beautiful UI with clean and structured code.</p>
+</div>
+
+<div class="service-box">
+<h3>Backend Development</h3>
+<p>Secure and scalable backend systems using Node & Python.</p>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+<h2>Contact Me</h2>
+<hr>
+<div class="contact">
+<div>
+<h3>Email</h3>
+<p>abhinavpratap227@gmail.com</p>
+</div>
+
+<div>
+<h3>Phone</h3>
+<p>+91 6386232221</p>
+</div>
+</div>
+</section>
+
+<footer>
+© 2026 Abhinav pratap singh | All Rights Reserved
+</footer>
+
+<script>
+function toggleMenu(){
+    document.getElementById("menu").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
